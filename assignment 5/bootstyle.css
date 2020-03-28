@@ -1,0 +1,35 @@
+h3{
+	text-align:center;
+	
+	background-color:black;
+}
+h2{
+color:white;	
+	
+}
+body{
+	
+	background-image:url("https://wallpaperplay.com/walls/full/5/8/7/164642.jpg");
+	background-repeat:no-repeat;
+	background-size:100%;
+	color:white;
+	
+}
+textarea {
+	color:white;
+}
+.reg{
+	
+	border:2px solid black;
+	border-radius:1;
+	
+}
+.form-controler{
+	background-color:transparent;
+	border:none;
+	border-bottom:2px solid black;
+	border-radius:0px;
+	
+}
+
+	

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Feedback-Form</title>
+
+<style>
+body{
+	background-image: url(feedback.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size:cover;
+}
+.myForm {
+font-family: "Lucida Sans Unicode";
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+border: 1px solid #ccc;
+color: black;
+background-color: white;
+}
+.form{
+	position: absolute;
+	left: 38%;
+	top: 1%;
+}
+.col{
+	border: 5px solid black;
+	color: black;
+	font-family: cursive;
+}
+.myForm * {
+box-sizing: border-box;
+
+}
+
+.myForm fieldset {
+border: none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm label {
+text-align: left;
+display: block;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+float: right;
+width: 60%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode";
+font-size: 1em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm input[type="radio"],
+.myForm input[type="checkbox"] {
+margin-left: 40%;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background:lightgrey ;
+border: none;
+font-weight: bold;
+margin-left: 40%;
+margin-top: 1.8em;
+border-radius: 30px;
+}
+
+.myForm button:hover {
+background: grey;
+cursor: pointer;
+
+}
+
+</style>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+	<div class="background"></div>
+<div class="form">
+<fieldset class="col">
+	<legend><h1>F E E D B A C K</h1></legend>
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p>
+<label>Name
+<input type="text" name="customer_name" placeholder="Enter Name" required>
+</label> 
+</p>
+
+<p>
+<label>Phone 
+<input type="tel" name="phone_number" placeholder="">
+</label>
+</p>
+
+<p>
+<label>Email 
+<input type="email" id="email" placeholder="abc@gmail.com" onblur="ValidateEmail()">
+</label>
+</p>
+
+<fieldset>
+<legend>Student Gender</legend>
+<p><label class="choice"> <input type="radio" name="taxi" required value="car"> Male </label></p>
+<p><label class="choice"> <input type="radio" name="taxi" required value="van"> Female </label></p>
+<p><label class="choice"> <input type="radio" name="taxi" required value="van"> Other </label></p>
+</fieldset>
+
+<fieldset>
+<legend>Feedback</legend>
+<p><label class="choice"> <input type="radio" name="taxi" required value="car"> poor </label></p>
+<p><label class="choice"> <input type="radio" name="taxi" required value="van"> good </label></p>
+<p><label class="choice"> <input type="radio" name="taxi" required value="vane"> very good </label></p>
+<p><label class="choice"> <input type="radio" name="taxi" required value="vane"> excellent </label></p>
+</fieldset>
+
+<p>
+<label>Date/Time
+<input type="datetime-local" name="pickup_time" required>
+</label>
+</p>
+	
+<p>
+<label>Corse Name
+<select id="pickup_place" name="pickup_place">
+<option value="" selected="selected">Select One</option>
+<option value="office" >DBMS</option>
+<option value="town_hall" >DSA</option>
+<option value="guess" >OS</option>
+</select>
+</label> 
+</p>
+
+<p>
+<label>Teacher name
+<input type="text" name="dropoff_place" required list="destinations">
+</label>
+<datalist id="destinations">
+<option value="Chintan Bhatt"></option>
+<option value="Ronak Patel"></option>
+<option value="Nikita Bhatt"></option>
+</datalist>
+</p>
+
+<p>
+<label>Point to write improve Teaching System
+	<p></p>
+<textarea name="comments" maxlength="500" placeholder="comments"></textarea>
+</label>
+</p>
+
+<p><button>Submit Feedback</button></p>
+
+</form>
+</fieldset>
+</div>
+
+</body>
+</html>
+

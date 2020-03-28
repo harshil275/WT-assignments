@@ -1,0 +1,61 @@
+body {
+  font-family:cursive;
+  margin:20px;
+  background-image: url('timetable.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:cover;
+  
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+h3 {
+  color:white;
+}
+.myTimetable {
+  width:100%;
+  height: 70%;
+  border-collapse: collapse;
+
+}
+
+.myTimetable thead{
+  color: #FFFFFF;
+  background-color:skyblue;
+  outline:1px solid black;
+  background-color: grey;
+
+}
+
+.myTimetable tbody {
+  background-color:white;
+}
+
+.myTimetable td {
+  border: 1px solid black;
+  padding: 6px;
+  text-align: center;
+}
+.myTimetable tbody tr td:first-child {
+  background-color: white;
+  font-weight: bold;
+}
+
+.break, .lunch {
+  background-color: skyblue;
+  font-style: italic;
+}
+
+.subject {
+  font-size: 12pt;
+  margin-bottom:30px;
+}
+
+.room {
+  font-size: 10pt;
+  font-style: italic;
+} 
